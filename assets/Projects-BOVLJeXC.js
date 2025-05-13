@@ -1,1 +1,0 @@
-import{_ as t}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{o as e,c}from"./index-BMgDxv6g.js";const o={},s={class:"text-white mt-20 py-5",id:"pojects"};function r(n,_){return e(),c("section",s)}const f=t(o,[["render",r]]);export{f as default};
