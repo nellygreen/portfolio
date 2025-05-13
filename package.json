@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d distgit",
+    "deploy": "gh-pages -d dist",
     "csscompile": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
