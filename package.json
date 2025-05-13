@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://nellygreen.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d distgit",
     "csscompile": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^6.3.0",
     "vue": "^3.5.13",
     "vue3-carousel": "^0.14.0"
   },
