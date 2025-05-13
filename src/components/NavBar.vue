@@ -25,10 +25,10 @@
             <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
                 <li v-for="item in Menu" :key="item.name">
                     <a :href="item.href" 
-                    class="block text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
+                    class="block text-white lowercase transition hover:text-primary ease-linear text-lg"
                     @click="scrollToSection(item.href)"
                     >
-                        {{ item.name }}
+                        {{ item.name }} <span class="text-primary font-bold">></span> 
                     </a>
                 </li>
             </ul>
@@ -39,10 +39,10 @@
 import { ref } from 'vue';
 const Menu = ref([
     {name:'Services',href:'#services'},
-    {name:'About Me',href:'#about'},
+    {name:'About',href:'#about'},
     {name:'Skills',href:'#skills'},
     {name:'Projects',href:'#projects'},
-    {name:'Testimonials',href:'#testimonials'},
+    {name:'Feedback',href:'#testimonials'},
     {name:'Contact',href:'#contact'},
 ]);
 

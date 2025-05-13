@@ -1,13 +1,13 @@
 <template>
     <section class="text-white mt-20" id="services">
         <div class="px-4 xl:pl-16">
-            <h2 class="text-3xl font-bold text-secondary mb-4">::::my services::::</h2>
+            <h2 class="text-3xl font-bold text-secondary mb-4">::::my__services::::</h2>
         </div>
-        <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+        <div class="py-8 px-4 xl:px-16 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
             <div v-for="service in services" :key="service.id" data-aos="fade-up"
             class="px-8 py-12 rounded-xl bg-[#23001b] shadow-xl ">
-                <div class="mx-auto h-24 text-center xl:h-28 xl:w-28">
-                    <div class="">
+                <div class="mx-auto h-20 text-center xl:h-20 xl:w-20">
+                    <div class="text-center">
                         <img :src="service.icon" alt="service icon" class="text-primary">
                     </div>
                 </div>

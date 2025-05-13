@@ -8,13 +8,11 @@
             <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
-                        <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            Hi, I am <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                                Nelly
-                            </span>
+                        <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-5xl">
+                            <span class="text-primary">:</span>:::hi::i::am<span class="text-secondary">|NELLY|</span>:):::<span class="text-primary">:</span> 
                         </h1>
                     </div>
-                    <p class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
+                    <p class="text-secondary pt-8 text-center lg:text-left mx-auto max-w-xl">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Incidunt dolore doloribus eligendi ea neque eveniet est dignissimos. 
                         Possimus, magnam! Quis rem quia fugit unde aperiam ad molestiae. Dolorem, eligendi dolorum!
@@ -45,8 +43,8 @@
                 <div class="lg:h-full md:flex">
                     <div class="flex w-full h-96 min-h-[24rem] lg:min-h-[none] lg:w-full lg:h-full items-center relative">
                         <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-20 from-[#ca339d] to-primary blur-2xl rounded-full"></div>
-                        <div class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 sm:right-16 shadow-lg ">
-                            <img src="@/assets/top_picture.jpg" alt="Hero pic" width="500" height="auto" loading="lazy" class="w-full h-full rounded-full object-cover border-2 border-primary ">
+                        <div class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 sm:right-16 ">
+                            <img src="@/assets/top_picture.jpg" alt="Hero pic" width="500" height="auto" loading="lazy" class="w-full h-full rounded-full object-cover border-4 border-primary">
                         </div>
                     </div>
                 </div>
@@ -56,6 +54,6 @@
 </template>
 <script setup>
 import AOS from 'aos';
-import 'aos/dist/aos';
+import 'aos/dist/aos.css';
 AOS.init();
 </script>
