@@ -1,24 +1,17 @@
 <template>
     <section class="text-white mt-20" id="testimonials" data-aos="zoom-in">
-        <h2 class="text-3xl font-bold text-secondary text-left mb-4 px-4 xl:pl-16 ">::::testimonials::::</h2>
+        <h2 class="text-3xl font-bold text-secondary text-left mb-4 px-4 xl:pl-16 ">::::my__latest__projects:::</h2>
         <div class="p-4 xl:px-16">
             <Carousel v-bind="settings" :breakpoints="breakpoints">
                 <Slide v-for="element in testimonials" :key="element.id">
                     <div class="carousel__item p4 my-2 ">
                         <div class="w-full mx-auto bg-treciary shadow-xl p-5 text-white font-light mb-6">
                             <div class="w-full flex mb-4 items-center">
-                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                                    <img :src="element.image" alt="testimonial image" loading="lazy">
+                                <div class="overflow-hidden w-50 h-50">
+                                    <img :src="element.image" alt="project image" loading="lazy">
                                 </div>
                                 <h6 class="ml-4 font-bold text-sm uppercase text-white">{{ element.fullName }}</h6>
-                            </div>
-                            <div class="w-full">
-                                <p class="text-sm leading-tight">
-                                    <span class="text-lg leading-none italic font-bold text-white mr-1"></span>
-                                        {{ element.content }}
-                                    <span class="text-lg leading-none italic font-bold text-white mr-1"></span>
-                                </p>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
                 </Slide>
@@ -41,11 +34,11 @@ const settings =ref({
 //Breakpoints
 const breakpoints =ref({
     700:{
-        itemsToShow:2.5,
+        itemsToShow:3,
         snapAlign:'center',
     },
     1024:{
-        itemsToShow:3,
+        itemsToShow:5,
         snapAlign:'start'
     }
 })
@@ -53,35 +46,29 @@ const breakpoints =ref({
 const testimonials=ref([
     {
         id:1,
-        fullName:'client 1',
-        image:'src/assets/image.png',
-        content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam.'
+        fullName:'Project 1',
+        image:'src/assets/project_01.png'
     },
     {
         id:2,
-        fullName:'client 2',
-        image:'src/assets/image.png',
-        content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam.'
+        fullName:'Project 2',
+        image:'src/assets/project_02.png'
     },
     {
         id:3,
-        fullName:'client 3',
-        image:'src/assets/image.png',
-        content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam.'
+        fullName:'Project 3',
+        image:'src/assets/project_03.png'
     },
     {
         id:4,
-        fullName:'client 4',
-        image:'src/assets/image.png',
-        content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam.'
+        fullName:'Project 4',
+        image:'src/assets/project_04.png'
     },
     {
         id:5,
-        fullName:'client 5',
-        image:'src/assets/image.png',
-        content:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam.'
+        fullName:'Project 5',
+        image:'src/assets/project_05.png'
     },
-
 ])
 </script>
 <style>

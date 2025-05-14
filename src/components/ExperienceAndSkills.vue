@@ -8,7 +8,7 @@
         </div>
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full w-[80%]">
-                <h2 class="text-3xl font-bold text-secondary text-left mb-4">
+                <h2 class="text-3xl font-bold text-primary text-left mb-4">
                     ::::my__skills::::
                 </h2>
                 <div class="mt-8" v-for="skill in Skills" :key="skill.id">
