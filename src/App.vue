@@ -5,7 +5,8 @@
     <ServicesSection />
     <AboutSection />
     <ExperienceAndSkills />   
-    <ContactSection /> 
+    <Projects />   
+    <ContactSection />  
     <BackToTop />   
     <TestimonialSection />  
   </div>
@@ -19,7 +20,11 @@ const HeroSection = defineAsyncComponent(()=>import('@/components/HeroSection.vu
 const ServicesSection = defineAsyncComponent(()=>import('@/components/ServicesSection.vue'));
 const AboutSection = defineAsyncComponent(()=>import('@/components/AboutSection.vue'));
 const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'));
-const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/ExperienceAndSkills.vue'));
 const TestimonialSection = defineAsyncComponent(()=>import('@/components/TestimonialSection.vue'));
+const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/ExperienceAndSkills.vue'));
+const Projects = defineAsyncComponent(()=>import('@/components/Projects.vue'));
 const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'));
+
+
+
 </script>
