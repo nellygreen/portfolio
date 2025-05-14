@@ -4,13 +4,11 @@
     <HeroSection />
     <ServicesSection />
     <AboutSection />
-    <ExperienceAndSkills />    
-    
+    <ExperienceAndSkills />   
     <ContactSection /> 
-    <BackToTop />    
-    <Footer /> 
+    <BackToTop />   
+    <TestimonialSection />  
   </div>
-
 </template>
 
 <script setup>
@@ -22,10 +20,6 @@ const ServicesSection = defineAsyncComponent(()=>import('@/components/ServicesSe
 const AboutSection = defineAsyncComponent(()=>import('@/components/AboutSection.vue'));
 const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'));
 const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/ExperienceAndSkills.vue'));
-
+const TestimonialSection = defineAsyncComponent(()=>import('@/components/TestimonialSection.vue'));
 const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'));
-const Footer = defineAsyncComponent(()=>import('@/components/Footer.vue'));
-
-
-
 </script>
